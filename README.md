@@ -1,3 +1,3 @@
 # WEATHERDEV 🌧
 
-Projeto para consulta de clima em AngularJS !!angular!!
+Projeto para consulta de clima em AngularJS
