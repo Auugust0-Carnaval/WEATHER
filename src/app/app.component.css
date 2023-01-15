@@ -1,8 +1,39 @@
 h1{
   text-transform: uppercase;
-  font-family: 'Comic Neue';
+  font-family: 'Bangers';
   text-align: center;
+  color: rgb(255, 255, 255);
 }
+
 .container{
-  padding: 4%;
+  /* background-image: url("src/assets/img/svg.png"); */
+  padding: 3%;
 }
+
+#card{
+  padding: 2%;
+
+}
+
+#horizontal .row{
+  opacity: 1;
+}
+
+#horizontal{
+  opacity: 0.1;
+}
+
+input{
+  margin-top: 1%;
+  font-family: 'Bangers';
+
+}
+
+h5{
+  font-family: 'Bangers';
+}
+html{
+  background-image: url("src/assets/img/svg.png");
+}
+
+
