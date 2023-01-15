@@ -1,3 +1,4 @@
+import { UpperCasePipe } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,4 +8,13 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'WEATHERDEV';
+
+
+  nameCity = 'insira sua cidade';
+
+  fun(): string{
+   this.nameCity = this.nameCity.toUpperCase();
+    return this.nameCity;
+
+  }
 }
