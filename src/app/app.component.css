@@ -29,11 +29,19 @@ input{
 
 }
 
-h5{
+h6{
   font-family: 'Bangers';
 }
 html{
   background-image: url("src/assets/img/svg.png");
+}
+
+a{
+  margin-top: 1%;
+}
+
+.button{
+  text-align: center;
 }
 
 
