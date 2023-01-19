@@ -1,5 +1,6 @@
 import { UpperCasePipe } from '@angular/common';
 import { Component, OnInit, Input } from '@angular/core';
+import { City } from './models/Citymodel';
 
 
 
@@ -12,9 +13,19 @@ import { Component, OnInit, Input } from '@angular/core';
 
 export class AppComponent implements OnInit{
 
+  cidade : City = {
+    temp : '',
+    humidity: '',
+    name: '',
+    pressure: '',
+    message : ''
+
+  }
+
   Inputcity: any  = ''; // valor da cidade inserida
 
   ngOnInit(): void {
+    console.log(this.cidade.name);
 
   }
 
@@ -44,12 +55,11 @@ export class AppComponent implements OnInit{
     xhr.send();
   }
 
-  displayWeather(weather_data: string){
-    var clima = weather_data;
-    this.jsonCity = clima;
-
+  displayWeather(weather_data: any){
+    this.cidade.temp = weather_data.main.temp;
+    this.cidade.humidity = weather_data.main.humidity;
+    this.cidade.name = weather_data.name;
+    this.cidade.pressure = weather_data.pressure;
+    this.cidade.message = weather_data.message;
   }
-
-
-
 }
