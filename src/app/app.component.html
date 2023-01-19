@@ -20,11 +20,22 @@
             <button class="waves-effect waves-light btn-small"  (click)="getWeather()" >{{Upper('buscar')}}</button>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <span>
-          {{jsonCity}}
-        </span>
+      </div><br>
+
+      <div class="weather" *ngIf="cidade.name != ''">
+        <div class="card horizontal" id="card">
+          <div class="row">
+            <h4 class="red-text">
+              <strong class="blue-text">
+                {{Upper("clima atual em")}}
+              </strong>
+               {{cidade.name | uppercase}}
+            </h4>
+          </div>
+
+
+
+        </div>
       </div>
 
   </div>
