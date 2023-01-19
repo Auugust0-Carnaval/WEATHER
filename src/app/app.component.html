@@ -10,13 +10,21 @@
 
       <div class="row">
         <div class="input-field col s12">
-          <input type="text" id="autocomplete-input" class="red-text">
+          <input type="text" id="autocomplete-input" class="white-text" [(ngModel)]="Inputcity">
           <label class="active" for="first_name2">
-            <h5 class="white-text">
-              {{fun()}}
-            </h5>
+            <h6 class="white-text">
+             {{Upper('insira a sua cidade')}}
+            </h6>
           </label>
+          <div class="button">
+            <button class="waves-effect waves-light btn-small"  (click)="getWeather()" >{{Upper('buscar')}}</button>
+          </div>
         </div>
+      </div>
+      <div class="container">
+        <span>
+          {{jsonCity}}
+        </span>
       </div>
 
   </div>
